@@ -43,7 +43,7 @@ const App = () => {
   
 	return (
 		<div className="app">
-      <h1>Tick Tock</h1>
+      <h1>Tick <span className="orange">Tock</span></h1>
       <h2>{message}</h2>
 			<Board gameState={current.board} handleSquareClick={handleSquareClick}/>
       <History gameState={gameState}/>

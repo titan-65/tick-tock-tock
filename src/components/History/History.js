@@ -3,12 +3,12 @@ import React from 'react'
 const History = ({gameState}) => {
 	console.log(gameState)
 	return (
-		<div>
-		<ul>
+		<div className="history-wrapper">
+		<ul className="history">
 			{
 				gameState.map((board, next) => {
 					return (<li>
-						<button type="button">{
+						<button className="btn" type="button">{
 							next === 0 ? 'Start Game' : `Next move | #${next}`
 						}</button>
 					</li>)
